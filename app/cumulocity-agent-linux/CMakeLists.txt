@@ -9,7 +9,7 @@ ExternalProject_Add(
         GIT_REPOSITORY https://bitbucket.org/m2m/cumulocity-agents-linux.git
         CONFIGURE_COMMAND :
         BUILD_IN_SOURCE 1
-        BUILD_COMMAND make -j release C8Y_LIB_PATH=${CMAKE_PREFIX_PATH}
+        BUILD_COMMAND make VERBOSE=1 release C8Y_LIB_PATH=${CMAKE_PREFIX_PATH}
 )
 add_dependencies(cumulocity-agent-linux curl)
 add_dependencies(cumulocity-agent-linux lua)
