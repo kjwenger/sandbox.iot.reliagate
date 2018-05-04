@@ -13,7 +13,7 @@ STAGING_DIR="${PROJECT_DIR}/staging/${MULTIARCH_TUPLE}"
 BUILD_DIR="${PROJECT_DIR}/build.${MULTIARCH_TUPLE}"
 
 cd "${PROJECT_DIR}"
-source environment-setup-cortexa8t2hf-vfp-neon-poky-linux-gnueabi
+source environment
 mkdir -p "${BUILD_DIR}"
 pushd "${BUILD_DIR}"
 rm -Rf *
